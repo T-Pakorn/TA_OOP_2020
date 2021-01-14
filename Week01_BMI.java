@@ -1,11 +1,12 @@
 import java.util.Scanner;
 
 /*
-* Testcase
+* Testcase from ApexTone
 * height, weight <= 0
 * input as number
 * floating point precision (input 95.5,50 => output 26.8573)
 * */
+
 
 public class Week01_BMI {
     public static double BMI(double weight,double height) {
