@@ -34,5 +34,7 @@ public class Week01_BMI {
         }
 
         System.out.println("BMI is " + String.format("%.4f",BMI(weight, height)));
+    
+        scanner.close();
     }
 }

@@ -38,6 +38,8 @@ public class Week01_DigitsSum {
                 sum += buffer;
             }
             System.out.printf("The sum of the digits is %d", sum);
+        
+            scanner.close();
         }
     }
 }
