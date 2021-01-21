@@ -6,7 +6,7 @@ import java.util.Scanner;
 * Invalid elapsed days
 * */
 
-public class Week02_FindFutureDates{
+public class Week02_FindFutureDates {
     public static void main(String[] args) {
         int startDate, elapsed;
         Scanner scanner = new Scanner(System.in);
