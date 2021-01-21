@@ -25,9 +25,9 @@ public class Week02_FindFutureDates {
                 System.out.println("Invalid future days\n");
                 continue;
             }
-            scanner.close();
 
             System.out.printf("Today is %s and the future day is %s\n\n", intToDay(startDate), intToDay((startDate + elapsed) % 7));
+
         }
     }
 
