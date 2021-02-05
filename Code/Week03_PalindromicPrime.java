@@ -54,4 +54,25 @@ public class Week03_PalindromicPrime {
         }
         return true;
     }
+
+    public static void getNPalindromicPrime(int n){
+        ArrayList<Integer> palindromicPrime = new ArrayList<>();
+
+        for(int i=2;;i++){
+            if(palindromicPrime.size() >= n){
+                break;
+            }
+            if(isPrime(i)){
+                if(isPalindrome(String.valueOf(i))){
+                    palindromicPrime.add(i);
+                }
+            }
+        }
+        for(int i=1;i<=palindromicPrime.size();i++){
+            System.out.print(palindromicPrime.get(i-1)+" ");
+            if(i%10 == 0){
+                System.out.println();
+            }
+        }
+    }
 }
