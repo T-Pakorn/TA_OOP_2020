@@ -80,7 +80,8 @@ public class Week05_RegularPolygon {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int choice;
-        int n,side,x,y;
+        int n,side;
+        double x,y;
         menu: while(true){
             System.out.println("Pick a number:\n" +
                     "1) for No-args constructor\n" +
@@ -104,15 +105,14 @@ public class Week05_RegularPolygon {
                 case 3: {
                     n=scanner.nextInt();
                     side=scanner.nextInt();
-                    x=scanner.nextInt();
-                    y=scanner.nextInt();
+                    x=scanner.nextDouble();
+                    y=scanner.nextDouble();
                     Week05_RegularPolygon polygon = new Week05_RegularPolygon(n,side,x,y);
                     System.out.println(polygon.getPerimeter() + " " + polygon.getArea());
                     break;
                 }
                 default: break menu;
             }
-            scanner.close();
         }
 
     }
